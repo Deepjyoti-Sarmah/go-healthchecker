@@ -16,13 +16,13 @@ func main()  {
         Name: "domain",
         Aliases: []string{"d"},
         Usage: "Domain name to check",
-        Require: true,
+        Required: true,
       },
       &cli.StringFlag{
         Name: "port",
         Aliases: []string{"p"},
         Usage: "Port number to check.",
-        Require: false,
+        Required: false,
       },
     },
     Action: func(c *cli.Context) error {
